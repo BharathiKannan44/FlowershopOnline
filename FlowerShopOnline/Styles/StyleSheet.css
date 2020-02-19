@@ -1,0 +1,167 @@
+body {
+    resize: both;
+    border-style: solid;
+    border-color: lavender;
+    width: 850px;
+    margin: auto;
+}
+
+header {
+    color: #004d4d;
+    padding-left: 2%;
+    padding-top: 0.1em;
+}
+
+nav {
+    height: 30px;
+    background-color: greenyellow;
+}
+
+section {
+    height: 1200px;
+}
+
+.left {
+    width: 250px;
+    float: left;
+}
+
+.content {
+    width: 600px;
+    float: right;
+}
+
+footer {
+    background-color: greenyellow;
+    color: #004d4d;
+    height: 40px;
+    text-align: center;
+}
+
+.img {
+    width: 30px;
+}
+
+h3 {
+    background-color: greenyellow;
+    width: 550px;
+    color: white;
+    height: 25px;
+}
+
+#flower {
+    padding: 20%;
+    height: 200px;
+    width: 180px;
+}
+
+.size {
+    width: 550px;
+	height: 680px;
+    background-color: #ffcc99;
+}
+
+.form {
+    height: 20px;
+    padding: 10px;
+}
+
+h2 {
+    color: #004d4d;
+}
+
+.label {
+    width: 150px;
+    display: inline-block;
+}
+
+.text {
+    padding: 0px;
+}
+
+#visa {
+    height: 50px;
+    width: 50px;
+    float: right;
+    padding-bottom: 10%;
+    padding-right: 20px;
+}
+
+.longText {
+    width: 300px;
+}
+
+.linkDiv {
+    width: 180px;	
+	padding-top: 3px;
+}
+
+.sideDiv {
+    float: right;
+	padding-top: 20px;
+}
+
+.linkImage {
+    width: 30px;
+    height: 30px;	
+	padding-top:3%;
+    
+}
+
+#sideImg{
+	width: 40px;
+    height: 40px;
+	padding-right: 25px;
+}
+.link {
+    color: darkblue;
+    font-size: larger;
+	margin-bottom: 5%;
+	border:0px;
+	background-color: white;
+	text-decoration: none;
+}
+
+hr {
+    background-color:greenyellow;
+	width:550px;
+	height: 1px;
+	float: left;
+}
+
+#head {
+    font-size: x-large;
+    padding-bottom: 1%;
+    color: blue;
+}
+
+#info {
+    color: blue;
+}
+
+#rightInfo {
+    color: blue;
+    float: right;
+    padding-right: 30px;
+}
+
+.question {
+    float: right;
+    height: 25px;
+    width: 25px;
+    margin-right: -60px;
+}
+
+.secondQuestion {
+    float: right;
+    height: 25px;
+    width: 25px;
+    margin-right: -30px;
+    margin-right: -30px;
+}
+
+.msg{
+	margin-left: 30%;
+	display: none;
+	color: red;
+}

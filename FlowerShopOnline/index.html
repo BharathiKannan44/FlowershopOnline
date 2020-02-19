@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Payment</title>
+    <link rel="stylesheet" href="Styles/StyleSheet.css" />
+	<script src="Scripts/Validation.js"></script>
+</head>
+<body>
+    <form id="payment">
+        <header>
+            <h1>Flower shop Online</h1>
+        </header>
+        <nav></nav>
+        <section>
+            <div class="left">
+                <img src="Images/flower.png" id="flower" />
+            </div>
+            <div class="content">
+                <h2>Secure Payment Page</h2>
+                <div class="form">
+                    <label class="label"><b>Select Language</b></label>
+                    <select class="text" style="width: 230px;">
+                        <option value="English">Engish</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label class="label">Payment method</label>
+                    <label><b>Visa</b></label>
+                </div>
+                <div class="form">
+                    <img id="visa" src="Images/VISA.jpg" />
+                    <label class="label">Description</label>
+                    <label><b>Item Ordered</b></label>
+                </div>
+                <div class="form">
+                    <label class="label">Amount</label>
+                    <label><b>$100</b></label>
+                </div>
+                <div style="height: 25px;">
+                    <img class="question" src="Images/questionMark.jpg" />
+                    <h3>Card details</h3>
+                </div>				
+                <div class="size" >
+                    <div style = "padding-top: 2%;">
+                        <label>You must Fields marked with *</label>
+                    </div>
+                    <div class="form">
+                        <label class="label">*Card number</label>
+                        <input type="text" class="longText" id ="txtCardNumber" maxlength = "16"/>
+						<span id = "requireCard" class ="msg">*card number is required</span>
+						<span id = "validateCard" class ="msg">*Please enter valid card number </span>
+                    </div>
+                    <div class="form">
+                        <label class="label">*<u>Security Code</u></label>
+                        <input type="text" style="width: 80px" id ="txtCode" maxlength = "3"/>
+						<span id = "requireCode" class ="msg">*Security Code is required</span>
+						<span id = "validateCode" class ="msg">*Please enter valid code number </span>
+                    </div>
+                    <div class="form">
+                        <label class="label">*Expiry date</label>
+                        <select id="txtMonth" style="width: 45px;">
+							<option value="0"></option>
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                            <option value="four">4</option>
+                            <option value="five">5</option>
+                            <option value="six">6</option>
+                            <option value="seven">7</option>
+                            <option value="eight">8</option>
+                            <option value="nine">9</option>
+                            <option value="ten">10</option>
+                            <option value="eleven">11</option>
+                            <option value="twelve">12</option>
+                        </select>&nbsp;&nbsp;&nbsp;
+                        <select id="txtYear" style="width: 67px;">
+						    <option value="0"></option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                        </select>
+						<span id = "requireDate"class ="msg">*Please selet your Expiry Date</span>
+                    </div>
+                    <div class="form">
+                        <label class="label">*Cardholder's name</label>
+						<input type="text" class="longText" id ="txtName" maxlength = "50"/>
+						<span id = "requireName" class ="msg">*Name is required</span>
+						<span id = "validateName" class ="msg">*Please enter valid Name </span>
+                    </div>
+                    <div>
+                        <img class="secondQuestion" src="Images/questionMark.jpg" />
+                        <h3>Cardholder details</h3>
+                    </div>
+                    <div>
+						<label>You must Fields marked with *</label>
+                    </div>
+                    <div class="form">
+                        <label class="label">*Address 1</label>
+                        <input type="text" class="longText" id="txtAddress" maxlength = "75"/>
+						<span id = "requireAddress" class ="msg">*Address is required</span>
+                    </div>
+                    <div class="form">
+                        <label class="label">&nbsp; Address 2</label>
+                        <input type="text" class="longText" maxlength = "75"/>
+                    </div>
+                    <div class="form">
+                        <label class="label">&nbsp; Address 3</label>
+                        <input type="text" class="longText" maxlength = "75"/>
+                    </div>
+                    <div class="form">
+                        <label class="label">*Town/City</label>
+                        <input type="text" class="longText" id ="txtCity" maxlength = "25"/>
+						<span id = "requireCity" class ="msg">*City is required</span>
+						<span id = "validateCity" class ="msg">*Please enter valid city </span>
+                    </div>
+                    <div class="form">
+                        <label class="label">&nbsp; Region</label>
+                        <input type="text" class="longText" id ="txtRegion" maxlength = "25"/>
+						<span id = "validateRegion" class ="msg">*Please enter valid region </span>
+                    </div>
+                    <div class="form">
+                        <label class="label">*Postcode/Zip code</label>
+                        <input type="text" style="width: 200px;" id ="txtZipCode" maxlength = "6"/>
+						<span id = "requirePostalCode" class ="msg">*Code is required</span>
+						<span id = "validatePostalCode" class ="msg">*Please enter valid PostalCode/ZipCode </span>
+                    </div>
+                    <div class="form">
+                        <label class="label">*Country</label>
+                        <select id="txtCountry" style="width: 240px;">
+							<option value="0">--Select country--</option>
+							<option value="india">India</option>
+                            <option value="unitedKingdom">United Kingdom</option>
+                        </select>
+						<span id = "requireCountry"class ="msg">*Please selet your Country</span>
+                    </div>
+                    <div class="form">
+                        <label class="label">&nbsp; Telephone</label>
+                        <input type="text" style="width: 200px;" id ="txtPhone" maxlength = "10"/>
+						<span id = "validateTelephone" class ="msg">*Please enter valid phone Number </span>
+                    </div>
+                    <div class="form">
+                        <label class="label">&nbsp; Fax</label>
+                        <input type="text" style="width: 200px;" id ="txtFax" maxlength = "7"/>
+						<span id = "validateFax" class ="msg">*Please enter valid fax</span>
+                    </div>
+                    <div class="form">
+                        <label class="label">*Email address</label>
+                        <input type="text" class="longText" id ="txtEmail" maxlength = "50"/>
+						<span id = "requireEmail" class ="msg">*Email Id is required</span>
+						<span id = "validateEmail" class ="msg">*Please enter valid Email Id</span>
+                    </div>
+                </div> 
+				<div class="sideDiv">
+					<button type ="button"  onclick="ValidateForm()" class="link">MAKE PAYMENT</button>
+                    <img src="Images/linkFlower.png" id = "sideImg" />
+                </div>
+                <div class="linkDiv">
+                    <img src="Images/startAgain.png"  class="linkImage" />
+					<a href ="PaymentPage.html" class="link">START AGAIN</a>
+                </div>
+                <div class="linkDiv">
+                    <img src="Images/cancel.png" class="linkImage" />
+					<a href ="" class="link">CANCEL</a>
+                </div>            
+                <hr />
+                <p id="head">Refunds and Returns</p>
+                <p id="info">For more information visit our <a href = "">Refunds and Returns policy</a></p>
+                <p id="rightInfo">for help with your payment visit the <a 	href= "">WorldPay help</a></p>
+                <img src="Images/worldpay.png" />
+            </div>   
+        </section>
+        <footer>
+            <h2>Thank you for Shooping at FlowerShop.Have a nice day</h2>
+        </footer>
+    </form>
+</body>
+</html>
